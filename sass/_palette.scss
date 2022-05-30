@@ -1,0 +1,25 @@
+$blanc-ivoire: #F7EDE2;
+$terracotta-light: #F28482;
+$rose-light:#F5CAC3;
+$vert-eau: #84A59D;
+$mandarine: #F6BD60;
+
+
+$custom-theme-colors: (
+  "blanc-ivoire": $blanc-ivoire,
+  "terracotta-light": $terracotta-light,
+  "rose-light": $rose-light,
+  "vert-eau": $vert-eau,
+  "mandarine": $mandarine,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@each $key, $val in $custom-theme-colors {
+  .bg-#{$key} {
+    background-color: $val!important;
+  }
+  .text-#{$key} {
+    color: $val!important;
+  }
+}

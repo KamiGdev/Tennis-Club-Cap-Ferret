@@ -1,0 +1,14 @@
+{
+  "name": "eval-1-site-html-css-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/global.scss styles/raw/style.css --watch"
+  },
+  "author": "kami-gourbail",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
