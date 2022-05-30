@@ -113,6 +113,41 @@ header .overlay {
 
 
 
+/* Section A propos */
+
+.image-a-propos {
+  padding-bottom: 3vh;
+  object-fit: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 73% 100%, 0 100%);
+  clip-path: url(../ressources/image-a-propos.jpg) polygon(0 0, 100% 0, 73% 100%, 0 100%) ; // url pour être supporté sur Internet explorer et Edge sur grands écrans, autres navigateurs ok
+}
+
+
+.sliding-left-content {
+  animation: slide-left 0.5s ease 1s backwards;
+}
+
+
+@keyframes slide-left {
+  
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+  }
+    
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+  }
+
+}
+
+
+
+
 
 
 
@@ -219,9 +254,24 @@ header video {
 }
         
 }
-        
-        
+  
 
+    /* Section A propos */
+@media screen and (min-width: 992px) {
+
+.image-a-propos {
+  padding-bottom: none;
+}
+        
+.responsive-order-1 {
+  order: 1;   
+}
+            
+.responsive-order-2 {
+  order: 2;
+}
+            
+}
 
 
 
