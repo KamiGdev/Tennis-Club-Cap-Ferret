@@ -17,3 +17,28 @@ window.addEventListener('scroll', () => {
         slidingCaracteristiques.classList.add('active')
     }
 })
+
+
+
+
+// Animation slide-left du texte Références client
+
+const slidingReferences = document.querySelector('.sliding-left-text-references');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+
+    // console.log(scrollTop, clientHeight)
+
+    const topElementToTopViewport = slidingReferences.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
+        slidingReferences.classList.add('active')
+    }
+})
+
+
