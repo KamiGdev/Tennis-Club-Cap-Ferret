@@ -120,7 +120,7 @@ header .overlay {
   object-fit: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 73% 100%, 0 100%);
-  clip-path: url(../ressources/image-a-propos.jpg) polygon(0 0, 100% 0, 73% 100%, 0 100%) ; // url pour être supporté sur Internet explorer et Edge sur grands écrans, autres navigateurs ok
+  clip-path: url(/ressources/image-a-propos.jpg) polygon(0 0, 100% 0, 73% 100%, 0 100%) ; // url pour être supporté sur Internet explorer et Edge sur grands écrans, autres navigateurs ok
 }
 
 
@@ -195,19 +195,47 @@ transform: translateX(0%);
 .sliding-left-text-references {
   transform: translateX(+100%);
   transition: transform 0.6s ease-in-out;
-  }
+}
   
 .sliding-left-text-references.active {
   transform: translateX(0%);
-  }
+}
   
 
 
 
 
+// Section Partenaires
 
+#banPartenaires {
+  position: relative;
+  background: url("/ressources/banniere-partenaires.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  z-index: 0;
 
+}
+  
 
+.overlay-partenaires {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+  }
+  
+  
+.content-text {
+position: relative;
+z-index: 2;
+
+}
 
 
 
