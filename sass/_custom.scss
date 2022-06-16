@@ -213,10 +213,10 @@ transform: translateX(0%);
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  overflow: hidden;
   text-align: center;
   border-bottom: 1px solid #F28482;
   z-index: 0;
-
 }
   
 
@@ -233,9 +233,137 @@ transform: translateX(0%);
   
   
 .content-text {
-position: relative;
-z-index: 2;
+  position: relative;
+  z-index: 2;
+}
 
+
+
+
+
+
+// Section Footer
+
+#footer-background {
+  position: relative;
+  background: url(/ressources/image-footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 0;
+}
+ 
+
+
+footer .overlay-footer {
+  position: absolute;
+  background-color: #000 ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+
+
+
+.logo-footer {
+  position: relative;
+  width: 20%;
+  height: auto;
+  z-index: 2;
+}
+
+
+.footer-heading, .block-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.block-footer a {
+  text-decoration: none;
+  color:#F7EDE2;
+}
+
+.block-footer a:hover {
+  color: #F28482;
+}
+
+
+
+
+
+.block-footer-1 {
+
+  ul {
+    padding: 0;
+ 
+
+    li {
+    
+
+      &, > a {
+        display: table;
+        line-height: 3;
+      }
+
+
+      span, img {
+
+        .icon {
+          width: 50px;
+          font-size: 18px;
+          padding-top: 2px;
+        }
+      
+
+        .icon, .text {
+        display: table-cell;
+        vertical-align: top;
+        }
+
+      }
+      
+    }
+  }
+}
+
+
+
+.block-footer-2 {
+  padding: 0;
+}
+
+
+
+.block-footer-3 {
+
+  ul {
+    padding: 0;
+  }
+
+    li {
+      display: inline-block;
+      margin: 0 10px 0 0;
+    }
+
+      .icon {
+        width: 1.7em;
+      }
+
+}
+
+
+
+.legacy a {
+  color: #F7EDE2;
+}
+
+
+.legacy a:hover {
+  color: #F28482;
 }
 
 
@@ -257,8 +385,8 @@ z-index: 2;
 
 
 
-
-
+  
+    
 
 
 
@@ -345,12 +473,6 @@ header video {
 }
             
 }
-
-
-
-
-
-
 
 
 
