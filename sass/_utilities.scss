@@ -4,7 +4,7 @@ $utilities: (
     (
       values: map-merge(
         map-get(map-get($utilities, "height"), "values"),
-        (300: 300px, 400: 400px, 500: 500px, 600: 600px)
+        (300: 300px, 400: 400px, 500: 500px, 600: 600px, 800: 800px)
       )
     )
   )
