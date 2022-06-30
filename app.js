@@ -42,3 +42,12 @@ window.addEventListener('scroll', () => {
 })
 
 
+
+
+
+  // Tooltip bouton sur le header page Evénements
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
