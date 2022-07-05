@@ -533,9 +533,6 @@ footer .overlay-footer {
 }
   
 
-
- 
-  
   
 .content-text {
   position: relative;
@@ -551,11 +548,50 @@ footer .overlay-footer {
 
 
 
+/* Cookie Consent */
+
+
+.cookie-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #343a40;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+  transition: 400ms;
+}
 
 
 
+.cookie-container.active {
+  bottom: 0;
+}
 
 
+
+.cookie-container a {
+  color: #f5f6fa;
+  text-decoration-color: #F28482;
+}
+
+
+.cookie-container a:hover {
+  color: #F28482;
+}
+
+
+.cookie-btn {
+  background: #F28482;
+  border: 0;
+  color: #f5f6fa;
+  padding: 10px 28px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
 
 
