@@ -139,7 +139,7 @@ header .content-height {
   object-fit: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 73% 100%, 0 100%);
-  clip-path: url(/ressources/image-a-propos.jpg) polygon(0 0, 100% 0, 73% 100%, 0 100%) ; // url pour être supporté sur Internet explorer et Edge sur grands écrans, autres navigateurs ok
+  clip-path: url(/ressources/home/image-a-propos.jpg) polygon(0 0, 100% 0, 73% 100%, 0 100%) ; // url ajouté en css pour être supporté sur Internet explorer et Edge sur grands écrans, autres navigateurs ok
 }
 
 
@@ -231,7 +231,7 @@ transform: translateX(0%);
 
 #banPartenaires {
   position: relative;
-  background: url("/ressources/banniere-partenaires.jpg");
+  background: url("/ressources/home/banniere-partenaires.jpg");
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -268,7 +268,7 @@ transform: translateX(0%);
 
 #footer-background {
   position: relative;
-  background: url(/ressources/image-footer.jpg);
+  background: url(/ressources/footer/image-footer.jpg);
   background-position: right;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -410,7 +410,7 @@ footer .overlay-footer {
 #banTarifs {
   position: relative;
   min-height: 300px;
-  background: url('/ressources/banniere-page-tarifs.jpg');
+  background: url('/ressources/tarifs/banniere-page-tarifs.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -430,7 +430,7 @@ footer .overlay-footer {
 
 .header-events {
   position: relative;
-  background-image: url('/ressources/header-page-evenements.jpg');
+  background-image: url('/ressources/evenements/header-page-evenements.jpg');
   background-position: center;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -542,7 +542,7 @@ footer .overlay-footer {
 
 #banEvents {
   position: relative;
-  background: url('/ressources/banner-section-events.jpg');
+  background: url('/ressources/evenements/banner-section-events.jpg');
   width: 100%;
   height: 600px;
   background-position: center;
@@ -567,7 +567,7 @@ footer .overlay-footer {
 
 #eventHarryPotter {
   position: relative;
-  background: url("/ressources/harrypotter-event.jpg");
+  background: url("/ressources/evenements/harrypotter-event.jpg");
   width:100%;
   height: 50vh;
   background-position: 85% 15%;
@@ -613,7 +613,7 @@ footer .overlay-footer {
 
 #banLegacy {
   position: relative;
-  background-image: url('/ressources/header-legacy.jpg');
+  background-image: url('/ressources/legal/header-legacy.jpg');
   background-position: 25% 40%;
   width: 100%;
   height: 40vh;
