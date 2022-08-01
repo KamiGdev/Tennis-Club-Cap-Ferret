@@ -1,43 +1,44 @@
-// Animation slide-right section caractéristiques, 3 dual contents
+// Animation slide-right section caractéristiques, 3 dual contents - Home Page
 
-let slidingCaracteristiques = document.querySelector('.sliding-right-caracteristiques');
+const slidingRight = document.querySelector('.sliding-right');
 
 window.addEventListener('scroll', () => {
 
-    let {scrollTop, clientHeight} = document.documentElement;
+    const {scrollTop, clientHeight} = document.documentElement;
 
 
     // console.log(scrollTop, clientHeight)
 
-    let topElementToTopViewport = slidingCaracteristiques.getBoundingClientRect().top;
+    const topElementToTopViewport = slidingRight.getBoundingClientRect().top;
 
     console.log(topElementToTopViewport);
 
     if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.9){
-        slidingCaracteristiques.classList.add('active')
+        slidingRight.classList.add('active')
     }
 })
 
 
 
 
-// Animation slide-left du texte Références client
 
-let slidingReferences = document.querySelector('.sliding-left-text-references');
+// Animation slide-left du texte Références client - Home Page + Titre événement à venir - Page Evénements
+
+const slidingLeft = document.querySelector('.sliding-left');
 
 window.addEventListener('scroll', () => {
 
-    let {scrollTop, clientHeight} = document.documentElement;
+    const {scrollTop, clientHeight} = document.documentElement;
 
 
     // console.log(scrollTop, clientHeight)
 
-    let topElementToTopViewport = slidingReferences.getBoundingClientRect().top;
+    const topElementToTopViewport = slidingLeft.getBoundingClientRect().top;
 
     console.log(topElementToTopViewport);
 
     if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
-        slidingReferences.classList.add('active')
+        slidingLeft.classList.add('active')
     }
 })
 
@@ -62,8 +63,8 @@ window.addEventListener('scroll', () => {
 // Cookie consent sur home page
 
 
-let cookieContainer = document.querySelector(".cookie-container");
-let cookieButton = document.querySelector(".cookie-btn");
+const cookieContainer = document.querySelector(".cookie-container");
+const cookieButton = document.querySelector(".cookie-btn");
 
 cookieButton.addEventListener("click", () => {
   cookieContainer.classList.remove("active");
