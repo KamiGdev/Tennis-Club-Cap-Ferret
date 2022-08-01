@@ -413,8 +413,6 @@ footer .overlay-footer {
   position: relative;
   background-image: url('/ressources/header-page-evenements.jpg');
   background-position: center;
-  width: 100%;
-  height: 85vh;
   overflow: hidden;
   background-repeat: no-repeat;
   z-index: 0;
@@ -458,7 +456,7 @@ footer .overlay-footer {
   font-size: clamp(20px, 8vw, 120px);
 }
 
- & span::after {
+  & span::after {
   content: "";
   display: block;
   position: absolute;
@@ -473,7 +471,7 @@ footer .overlay-footer {
  
 
 
- .container-events p:nth-child(1) {
+.container-events p:nth-child(1) {
   animation: txt-appearance 0s 1s forwards;
 }
 
@@ -526,9 +524,10 @@ footer .overlay-footer {
 #banEvents {
   position: relative;
   background: url('/ressources/banner-section-events.jpg');
-  background-position: center;
   width: 100%;
   height: 600px;
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
   text-align: center;
@@ -541,6 +540,50 @@ footer .overlay-footer {
   position: relative;
   z-index: 1;
 }
+
+
+
+
+
+
+#eventHarryPotter {
+  position: relative;
+  background: url("/ressources/harrypotter-event.jpg");
+  width:100%;
+  height: 50vh;
+  background-position: 85% 15%;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #fff;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+
+
+#eventHarryPotter .overlay-harrypotter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+
+
+
+.container-harrypotter {
+  position: relative;
+  z-index: 3;
+  
+}
+
+
+
+
 
 
 
