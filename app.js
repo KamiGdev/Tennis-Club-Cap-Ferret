@@ -1,15 +1,15 @@
 // Animation slide-right section caractéristiques, 3 dual contents - Home Page
 
-const slidingRight = document.querySelector('.sliding-right');
+let slidingRight = document.querySelector('.sliding-right');
 
 window.addEventListener('scroll', () => {
 
-    const {scrollTop, clientHeight} = document.documentElement;
+    let {scrollTop, clientHeight} = document.documentElement;
 
 
     // console.log(scrollTop, clientHeight)
 
-    const topElementToTopViewport = slidingRight.getBoundingClientRect().top;
+    let topElementToTopViewport = slidingRight.getBoundingClientRect().top;
 
     console.log(topElementToTopViewport);
 
@@ -24,16 +24,16 @@ window.addEventListener('scroll', () => {
 
 // Animation slide-left du texte Références client - Home Page + Titre événement à venir - Page Evénements
 
-const slidingLeft = document.querySelector('.sliding-left');
+let slidingLeft = document.querySelector('.sliding-left');
 
 window.addEventListener('scroll', () => {
 
-    const {scrollTop, clientHeight} = document.documentElement;
+    let {scrollTop, clientHeight} = document.documentElement;
 
 
     // console.log(scrollTop, clientHeight)
 
-    const topElementToTopViewport = slidingLeft.getBoundingClientRect().top;
+    let topElementToTopViewport = slidingLeft.getBoundingClientRect().top;
 
     console.log(topElementToTopViewport);
 
@@ -63,8 +63,8 @@ window.addEventListener('scroll', () => {
 // Cookie consent sur home page
 
 
-const cookieContainer = document.querySelector(".cookie-container");
-const cookieButton = document.querySelector(".cookie-btn");
+let cookieContainer = document.querySelector(".cookie-container");
+let cookieButton = document.querySelector(".cookie-btn");
 
 cookieButton.addEventListener("click", () => {
   cookieContainer.classList.remove("active");
