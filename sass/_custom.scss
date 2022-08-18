@@ -106,7 +106,7 @@ header .image-grand-ecran {
 }
 
 
- @-webkit-keyframes kenburns-top {
+ @keyframes kenburns-top {
   0% {
     -webkit-transform: scale(1) translateY(0);
             transform: scale(1) translateY(0);
@@ -229,7 +229,7 @@ transform: translateX(0%);
 
 /* Section Partenaires - Home Page */
 
-#banPartenaires {
+#partenaires {
   position: relative;
   background: url("/ressources/home/banniere-partenaires.jpg");
   background-position: top;
@@ -651,7 +651,9 @@ footer .overlay-footer {
 
 
 
-
+.lienPage-mentionsLegales:hover {
+  color: #F28482
+}
 
 
 
