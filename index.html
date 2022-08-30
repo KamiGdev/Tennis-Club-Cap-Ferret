@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Tennis Club Cap-Ferret">
     <meta name="description" content="Cours et compétitions de tennis pour enfants, ados, adultes, valides et handicapés. Terrains en dur et terre battue. Restauration et piscine extérieure à disposition.">
-    <link rel="preload" href="styles/raw/style.css" as="style"> // On optimise le téléchargement de la home page, inclus la ligne de code qui suit
+          <!-- On optimise le téléchargement de la home page, inclus la ligne de code qui suit -->
+    <link rel="preload" href="styles/raw/style.css" as="style">
     <link rel="stylesheet" href="styles/raw/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,14 +25,18 @@
 
     <!-- Navbar -->
     
-    <nav class="navbar navbar-expand-lg bg-rose-light navbar-light fixed-top">
+    <nav id="navbar-scrollspy" class="navbar navbar-expand-lg bg-rose-light navbar-light fixed-top">
       <div class="container">
         <a href="index.html" class="navbar-brand">
           <img src="./ressources/logo-tennis-club.jpg" alt="Logo Tennis club Cap-Ferret" class="d-inline-block align-text"><span>&emsp; Le tennis autrement</span>
         </a>
+
+        <!-- Ce qui est visible en petit écran écran -->
         <button class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Ce qui est visible en grand écran  -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto text-center" id="navbarNav">
             <li class="nav-item me-1">
@@ -61,7 +66,12 @@
     </nav>
 
 
+        <!-- Ouverture de la div Scrollspy de nav-items dans la navbar -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0"> 
     
+
+
+
 
     <!-- Header, média et contenu texte -->
 
@@ -418,8 +428,15 @@
     </section>
 
 
+
+        <!-- Fermeture de la div Scrollspy de nav-items dans la navbar -->
+    </div>
   
-    
+
+
+
+
+
 
     <!-- Section Footer -->
 

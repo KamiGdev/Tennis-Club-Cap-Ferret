@@ -1,3 +1,15 @@
+// Couleur des nav-items au Scrollspy dans le menu
+
+$navbar-light-color:                rgba($gray-800, .9);
+$navbar-light-hover-color:          rgba($gray-900, .9);
+$navbar-light-active-color:         rgba($terracotta-light, .9);
+
+
+
+
+
+// Couleur des éléments dans le module accordéon - Page Tarifs
+
 $accordion-padding-y:                     1rem;
 $accordion-padding-x:                     1.25rem;
 $accordion-color:                         $rose-light;
@@ -34,8 +46,13 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 
 
 
-// List
+            // List dans l'accordéon - Page Tarifs
 
 $list-group-color: $vert-eau;     
 $list-group-bg: $blanc-ivoire;   
 $list-group-border-width: 2px;
+
+
+
+
+

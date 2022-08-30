@@ -22,7 +22,7 @@
 
     <!-- Navbar -->
     
-    <nav class="navbar navbar-expand-lg bg-rose-light navbar-light fixed-top">
+    <nav id="navbar-scrollspy" class="navbar navbar-expand-lg bg-rose-light navbar-light fixed-top">
       <div class="container">
         <a href="index.html" class="navbar-brand">
           <img src="./ressources/logo-tennis-club.jpg" alt="Logo Tennis club Cap-Ferret" class="d-inline-block align-text"><span>&emsp; Le tennis autrement</span>
@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto text-center" id="navbarNav">
             <li class="nav-item me-1">
-              <a href="/index.html" class="nav-link active">Accueil</a>
+              <a href="/index.html#home" class="nav-link">Accueil</a>
             </li>
             <li class="nav-item me-1">
               <a href="/index.html#aPropos" class="nav-link">Concept</a>
@@ -42,7 +42,7 @@
               <a href="/index.html#cours" class="nav-link">Cours</a>
             </li>
             <li class="nav-item me-1">
-              <a href="/tarifs.html" class="nav-link">Tarifs</a>
+              <a href="#tarifs" class="nav-link">Tarifs</a>
             </li>
             <li class="nav-item me-1">
               <a href="/evenements.html" class="nav-link">Evénements</a>
@@ -59,12 +59,18 @@
     </nav>
 
 
+        <!-- Ouverture de la div Scrollspy de nav-items dans la navbar -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0"> 
+
+        
+
+
 
 
      <!-- Container Tarifs -->
 
     
-    <section class="bg-blanc-ivoire pt-5">
+    <section id="tarifs" class="bg-blanc-ivoire pt-5">
 
       <div class="container p-5">
 
@@ -374,8 +380,15 @@
 
 
 
-  
+        <!-- Fermeture de la div Scrollspy de nav-items dans la navbar -->
+    </div>
     
+
+
+
+
+
+
 
     <!-- Section Footer -->
 

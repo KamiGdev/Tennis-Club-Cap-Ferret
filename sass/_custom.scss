@@ -9,6 +9,7 @@ $font-family-base: Hind, sans-serif;
 body {
   width: 100%;
   margin: 0;
+  position: relative; // Pour le scrollspy des nav-items de la navbar
   }
   
 
@@ -52,6 +53,7 @@ body {
 .nav-item:hover::after {
   transform: scale(1);
 }
+
 
 
 .navbar-light .navbar-toggler-icon {

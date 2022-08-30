@@ -1,3 +1,13 @@
+// Animation Scrollspy - Nav-items dans le menu
+
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-scrollspy'
+})
+
+
+
+
+
 // Animation slide-right section caractéristiques, 3 dual contents - Home Page
 
 let slidingRight = document.querySelector('.sliding-right');
@@ -46,7 +56,7 @@ window.addEventListener('scroll', () => {
 
 
 
-  // Tooltip bouton sur le header page Evénements
+  // Tooltip bouton sur le header - Page Evénements
 
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -61,7 +71,6 @@ window.addEventListener('scroll', () => {
 
 
 // Cookie consent sur home page
-
 
 let cookieContainer = document.querySelector(".cookie-container");
 let cookieButton = document.querySelector(".cookie-btn");
