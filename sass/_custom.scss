@@ -380,15 +380,21 @@ footer .overlay-footer {
 }
 
 
-
 .legacy a {
-  color: #F7EDE2;
+  color: #F7EDE2; // Copyright
 }
 
 
 .legacy a:hover {
-  color: #F28482;
+  color: #F28482; // Copyright
 }
+
+
+
+.lienPage-mentionsLegales:hover {
+  color: #F28482 // Copyright
+}
+
 
 
 
@@ -432,6 +438,8 @@ footer .overlay-footer {
 
 .header-events {
   position: relative;
+  width: 100%;
+  height: 80vh;
   background-image: url('/ressources/evenements/header-page-evenements.jpg');
   background-position: center;
   overflow: hidden;
@@ -474,7 +482,7 @@ footer .overlay-footer {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  font-size: clamp(20px, 8vw, 120px);
+  
 }
 
   & span::after {
@@ -490,6 +498,7 @@ footer .overlay-footer {
 
 }
  
+
 
 
 .container-events p:nth-child(1) {
@@ -652,10 +661,6 @@ footer .overlay-footer {
 
 
 
-
-.lienPage-mentionsLegales:hover {
-  color: #F28482
-}
 
 
 
