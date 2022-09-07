@@ -14,6 +14,79 @@ body {
   
 
 
+
+
+/* Preloader sur la page Accueil */
+
+.loader {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#84A59D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+}
+
+
+
+.loader.hidden {
+  animation: fadeOut 1s forwards; // Pour faire disparaître le loader au chargement de page, incluant la ligne de code ci-dessous avec keyframes fadeout
+}
+   
+
+@keyframes fadeOut {
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+} 
+
+
+
+.anim > div {
+  width: 2.5em;
+  height: 2.5em;
+  background: #F28482;
+  border-radius: 50%;
+  display: inline-block;
+  animation: troisPointsGrow 0.5s infinite ease-in-out alternate;
+}
+
+
+.anim .bounce1 {
+  animation-delay: -0.3s;
+}
+
+
+.anim .bounce2 {
+  animation-delay: -0.15s; // Le bounce 3 démarre de suite
+}
+
+@keyframes troisPointsGrow {
+
+  0%{
+      transform: scale(0);
+  }
+  
+  100% {
+      transform: scale(1);
+  }
+
+}
+
+
+
+
+
 /* navbar */
 
 .navbar img {

@@ -1,3 +1,14 @@
+// Disparition du Preloader sur la page Accueil dès le chargement du site
+
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', function(){
+    loader.className += " hidden";
+})
+
+
+
+
 // Animation Scrollspy - Nav-items dans le menu
 
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
