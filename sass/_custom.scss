@@ -156,7 +156,8 @@ header {
   position: relative;
   background-color: black;
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
+  height: auto;
   overflow: hidden;
 }
 
@@ -501,6 +502,7 @@ footer .overlay-footer {
 #banTarifs {
   position: relative;
   min-height: 300px;
+  height: auto;
   background: url('/ressources/tarifs/banniere-page-tarifs.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -521,8 +523,10 @@ footer .overlay-footer {
 
 .header-events {
   position: relative;
-  width: 100%;
-  height: 80vh;
+  min-height: 80vh;
+  height: auto;
+  min-width: 100%;
+  width: auto;
   background-image: url('/ressources/evenements/header-page-evenements.jpg');
   background-position: center;
   overflow: hidden;
@@ -709,8 +713,10 @@ footer .overlay-footer {
   position: relative;
   background-image: url('/ressources/legal/header-legacy.jpg');
   background-position: 25% 40%;
-  width: 100%;
-  height: 40vh;
+  min-width: 100%;
+  width: auto;
+  min-height: 40vh;
+  height:auto;
   overflow: hidden;
   background-repeat: no-repeat;
   z-index: 0;
