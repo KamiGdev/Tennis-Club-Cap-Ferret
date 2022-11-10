@@ -94,12 +94,22 @@ body {
   height: auto;
 }
 
-.navbar span {
+
+.navbar-brand span {
   color: #6c757d;
   font-family: "Hind";
   font-size: 18px;
-  font-weight: bolder;
+  font-weight: bold;
+  display: none;
 }
+
+@media screen and (min-width: 480px) {
+  .navbar-brand span {
+  display: inline-block;
+  }
+}
+
+
 
 
 .nav-item {
@@ -782,29 +792,6 @@ footer .overlay-footer {
   border-radius: 6px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
