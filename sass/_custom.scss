@@ -226,6 +226,25 @@ header .content-height {
 
 
 
+@media screen and (min-width: 768px) {
+
+  header .image-petit-ecran {
+    display: none;
+  }
+            
+  header .image-grand-ecran {
+    display: block;
+  }
+            
+  }
+
+
+
+
+
+
+
+
 /* Section A propos - Home page */
 
 .image-a-propos {
@@ -257,6 +276,25 @@ header .content-height {
   }
 
 }
+
+
+
+@media screen and (min-width: 992px) {
+
+  .image-a-propos {
+    padding-bottom: none;
+  }
+          
+  .responsive-order-1 {
+    order: 1;   
+  }
+              
+  .responsive-order-2 {
+    order: 2;
+  }
+              
+  }
+
 
 
 
@@ -358,136 +396,6 @@ transform: translateX(0%);
 
 
 
-/* Section Footer - Home Page */ 
-
-#footer-background {
-  position: relative;
-  background: url(/ressources/footer/image-footer.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  z-index: 0;
-}
- 
-
-
-footer .overlay-footer {
-  position: absolute;
-  background-color: #000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  z-index: 1;
-}
-
-
-
-
-.logo-footer {
-  position: relative;
-  width: 20%;
-  height: auto;
-  z-index: 2;
-}
-
-
-.footer-heading, .block-footer {
-  position: relative;
-  z-index: 2;
-}
-
-.block-footer a {
-  text-decoration: none;
-  color:#F7EDE2;
-}
-
-.block-footer a:hover {
-  color: #F28482;
-}
-
-
-
-
-
-.block-footer-1 {
-
-
-  ul {
-    padding: 0;
- 
-
-    li {
-    
-
-      &, > a {
-        display: table;
-        line-height: 3;
-      }
-
-
-      span, img {
-
-        .icon {
-          width: 50px;
-          font-size: 18px;
-          padding-top: 2px;
-        }
-      
-
-        .icon, .text {
-        display: table-cell;
-        vertical-align: top;
-        }
-
-      }
-      
-    }
-  }
-
-}
-
-
-
-.block-footer-2 {
-  padding: 0;
-}
-
-
-
-.block-footer-3 {
-
-  ul {
-    padding: 0;
-  }
-
-    li {
-      display: inline-block;
-      margin: 0 10px 0 0;
-    }
-
-      .icon {
-        width: 1.7em;
-      }
-
-}
-
-
-
-.legacy a {
-  color: #F7EDE2;
-}
-
-
-.legacy a:hover {
-  color: #F28482;
-}
-
-
-
-
-
 
 
 /* Page contact */ 
@@ -501,6 +409,27 @@ footer .overlay-footer {
   height: auto;
   background-position: center;
 }
+
+
+
+@media screen and (min-width: 992px) {
+
+  .responsive-order-div-image-1 {
+    order: 1;
+  }
+
+
+  .responsive-order-formulaire-contact-2 {
+    order: 2;
+  }
+
+
+  .image-bloc-page-contact {
+   object-fit: contain;
+  }
+
+}
+
 
 
 
@@ -539,6 +468,18 @@ footer .overlay-footer {
               0 0 50px #F6BD60,
               0 0 100px #F6BD60;
 }
+
+
+
+
+@media screen and (min-width: 768px) {
+
+  #carouselContent {
+    font-size: 35px;
+  }
+  
+}
+
 
 
 
@@ -734,6 +675,64 @@ footer .overlay-footer {
 
 
 
+@media screen and (min-width: 320px) {
+
+  .container-events p span {
+    font-size: clamp(20px, 7vw, 120px);
+  }
+
+}
+  
+
+
+@media screen and (min-width: 440px) {
+
+  .container-events p span {
+    font-size: clamp(20px, 6vw, 120px);
+  }
+
+}
+  
+
+
+@media screen and (min-width: 576px) {
+
+  .container-events p span {
+    font-size: clamp(20px, 5vw, 120px);
+  }
+
+}
+  
+
+@media screen and (min-width: 620px) {
+
+  .container-events p span {
+    font-size: clamp(20px, 4vw, 120px);
+  }
+
+}
+  
+
+
+@media screen and (min-width: 992px) {
+
+  .container-events p span {
+    font-size: clamp(20px, 3vw, 120px);
+  }
+
+}
+  
+
+
+
+@media screen and (min-width: 1400px) {
+
+  .container-events p span {
+    font-size: clamp(20px, 2vw, 120px);
+  }
+
+}
+  
 
 
 
@@ -787,6 +786,138 @@ footer .overlay-footer {
 
 
 
+/* Section Footer - Toutes les pages */ 
+
+#footer-background {
+  position: relative;
+  background: url(/ressources/footer/image-footer.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 0;
+}
+ 
+
+
+footer .overlay-footer {
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+
+
+
+.logo-footer {
+  position: relative;
+  width: 20%;
+  height: auto;
+  z-index: 2;
+}
+
+
+.footer-heading, .block-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.block-footer a {
+  text-decoration: none;
+  color:#F7EDE2;
+}
+
+.block-footer a:hover {
+  color: #F28482;
+}
+
+
+
+
+
+.block-footer-1 {
+
+
+  ul {
+    padding: 0;
+ 
+
+    li {
+    
+
+      &, > a {
+        display: table;
+        line-height: 3;
+      }
+
+
+      span, img {
+
+        .icon {
+          width: 50px;
+          font-size: 18px;
+          padding-top: 2px;
+        }
+      
+
+        .icon, .text {
+        display: table-cell;
+        vertical-align: top;
+        }
+
+      }
+      
+    }
+  }
+
+}
+
+
+
+.block-footer-2 {
+  padding: 0;
+}
+
+
+
+.block-footer-3 {
+
+  ul {
+    padding: 0;
+  }
+
+    li {
+      display: inline-block;
+      margin: 0 10px 0 0;
+    }
+
+      .icon {
+        width: 1.7em;
+      }
+
+}
+
+
+
+.legacy a {
+  color: #F7EDE2;
+}
+
+
+.legacy a:hover {
+  color: #F28482;
+}
+
+
+
+
+
+
+
 /* Cookie Consent */
 
 
@@ -831,149 +962,6 @@ footer .overlay-footer {
   border-radius: 6px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Medias queries */
-
-      /* Header - Home Page */
-@media screen and (min-width: 768px) {
-
-header .image-petit-ecran {
-  display: none;
-}
-          
-header .image-grand-ecran {
-  display: block;
-}
-          
-}
-    
-
-    /* Section A propos - Home Page */
-@media screen and (min-width: 992px) {
-
-.image-a-propos {
-  padding-bottom: none;
-}
-        
-.responsive-order-1 {
-  order: 1;   
-}
-            
-.responsive-order-2 {
-  order: 2;
-}
-            
-}
-
-
-
-
-    /* Page contact */ 
-@media screen and (min-width: 992px) {
-
-  .responsive-order-div-image-1 {
-    order: 1;
-  }
-
-
-  .responsive-order-formulaire-contact-2 {
-    order: 2;
-  }
-
-
-  .image-bloc-page-contact {
-   object-fit: contain;
-  }
-
-}
-
-
-
-    /* Page Tarifs */
-@media screen and (min-width: 768px) {
-
-  #carouselContent {
-    font-size: 35px;
-  }
-  
-}
-
-
-
-
-   /* Page Evénements */   
-@media screen and (min-width: 320px) {
-
-  .container-events p span {
-    font-size: clamp(20px, 7vw, 120px);
-  }
-
-}
-  
-
-
-@media screen and (min-width: 440px) {
-
-  .container-events p span {
-    font-size: clamp(20px, 6vw, 120px);
-  }
-
-}
-  
-
-
-@media screen and (min-width: 576px) {
-
-  .container-events p span {
-    font-size: clamp(20px, 5vw, 120px);
-  }
-
-}
-  
-
-@media screen and (min-width: 620px) {
-
-  .container-events p span {
-    font-size: clamp(20px, 4vw, 120px);
-  }
-
-}
-  
-
-
-@media screen and (min-width: 992px) {
-
-  .container-events p span {
-    font-size: clamp(20px, 3vw, 120px);
-  }
-
-}
-  
-
-
-
-
-
-@media screen and (min-width: 1400px) {
-
-  .container-events p span {
-    font-size: clamp(20px, 2vw, 120px);
-  }
-
-}
-  
 
 
 
