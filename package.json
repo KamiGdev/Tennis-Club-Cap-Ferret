@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass sass/global.scss styles/raw/style.css --watch"
+    "sass": "sass sass/global.scss styles/raw/style.css --watch",
+    "purgecss":  "purgecss --css styles/raw/style.css --content index.html scripts/*.js -o styles/cleaned/home.css"
   },
   "author": "kami-gourbail",
   "license": "ISC",

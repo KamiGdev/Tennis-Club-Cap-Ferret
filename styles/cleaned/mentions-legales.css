@@ -32,6 +32,10 @@ body {
 }
 
 /* Preloader sur la page Accueil */
+.loader.hidden {
+  animation: fadeOut 1s forwards;
+  /* Pour faire disparaître le loader au chargement de page, incluant la ligne de code ci-dessous avec keyframes fadeout */
+}
 
 @keyframes fadeOut {
   100% {
