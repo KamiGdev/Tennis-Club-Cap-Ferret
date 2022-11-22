@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+  <head>
+    <!-- SEO et accessibilité -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Contact">
+    <meta name="description" content="Formulaire de contact.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Hind:wght@300&display=swap" rel="stylesheet" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles/cleaned/contact.css" />
+  </head>
+  
+  <body>
+
+
+
+
+    <!-- Navbar -->
+    
+    <nav id="navbar-scrollspy" class="navbar navbar-expand-lg bg-rose-light navbar-light fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="./ressources/logo-tennis-club.jpg" alt="Logo Tennis club Cap-Ferret" class="d-inline-block align-text"><span>&emsp; Le tennis autrement</span>
+        </a>
+        <button class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto text-center" id="navbarNav">
+            <li class="nav-item me-1">
+              <a href="/index.html#home" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="/index.html#aPropos" class="nav-link">Concept</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="/index.html#cours" class="nav-link">Cours</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="/tarifs.html" class="nav-link">Tarifs</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="/evenements.html" class="nav-link">Evénements</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="/index.html#partenaires" class="nav-link">Partenaires</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+        <!-- Ouverture de la div Scrollspy de nav-items dans la navbar -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0"> 
+
+
+
+
+
+        <!-- Formulaire de contact avec image -->
+
+    <section id="contact" class="bg-vert-eau">
+  
+      <div class="container bg-vert-eau mt-5">
+        <div class="row row-cols-1 row-cols-lg-2">
+
+          <div class="mt-5 mb-5 responsive-order-formulaire-contact-2">
+
+            <div class="p-4 p-md-5 text-center">
+              <h2 class="cairo-font text-white fw-lighter fs-4 mb-0">Je veux jouer au tennis et me restaurer.<br><span>&ensp;Seul.e ou entre ami.e.s.</span></h2>
+              <h1 class="cairo-font text-white fw-bolder display-6 pt-2 mb-3">Ça tombe bien.<br>Contactez-nous !</h1>
+              <h3 class="h5 text-rose-light">Réservations - Privatisations - Renseignements - Suggestions.</h3>
+
+            </div>
+
+
+            <div class="ms-5 ">
+              <form class="mt-2">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+            
+                  <div class="form-floating col-11">
+                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Nom">
+                    <label for="floatingInputValue">Nom</label>
+                  </div>    
+            
+                </div>
+            
+            
+                <div class="input-group mb-3">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-at"></i>
+                  </span>
+                      
+                  <div class="form-floating col-11">
+                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Votre email">
+                    <label for="floatingInputValue">Votre email</label>
+                  </div>    
+                    
+                </div>
+            
+            
+                <div class="input-group mb-3">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-pencil"></i>
+                  </span>
+                      
+                  <div class="form-floating col-11">
+                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Message">
+                    <label for="floatingInputValue">Message</label>
+                  </div>    
+            
+                </div>
+                
+                <div class="d-flex justify-content-center">
+                  <input type="submit" value="Envoyer" class="btn btn-terracotta-light btn-md col-6">
+                </div>
+
+              </form>
+            </div>
+
+          
+          </div>
+
+            
+
+          <div class="responsive-order-div-image-1">
+            <img src="ressources/contact/image-page-contact.jpg" alt="Balle de tennis qui sort d'une orange" class="w-100 h-100 image-bloc-page-contact">
+          </div>
+         
+
+
+        </div>
+      </div>
+
+    </section>
+
+
+        <!-- Fermeture de la div Scrollspy de nav-items dans la navbar -->
+    </div>
+    
+
+
+
+
+
+
+    <!-- Section Footer -->
+
+    <footer id="footer-background">
+
+      <div class="overlay-footer"></div>
+
+
+          <!-- Logo du club et baseline -->
+      <div class="container ">
+       <div class="row justify-content-center">
+         <div class="col-md-6 d-flex flex-column align-items-center mt-5">
+           <img src="./ressources/logo-tennis-club.jpg" alt="logo Tennis Club Cap-Ferret" class="logo-footer">
+           <h5 class="cairo-font fw-lighter text-white mt-2 ">Le tennis autrement</h5>
+          </div>
+
+        </div>
+      </div>
+
+
+          <!-- Contenu du footer avec 3 rubriques titres et ses 3 blocs -->      
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 mt-4">
+            <h5 class="h4 footer-heading d-flex cairo-font text-white mb-0">
+							<span class="d-flex align-items-center justify-content-center"></span>
+							Où nous trouver
+            </h5>
+            
+            
+                      <!-- Bloc 1 -->  
+            <div class="block-footer block-footer-1 mt-1">
+              <ul class="list-unstyled">
+                <li><a href="#"><img src="./ressources/footer/localisation-footer-icon.svg" alt="icône de localisation" class="icon"><span class="text">&emsp; 5 chemin Emile Pruvost, 3970 Cap-Ferret, France</span></a></li>
+                <li><img src="./ressources/footer/horaires-footer-icon.svg" alt="icône maison" class="icon"><span class="text text-blanc-ivoire">&emsp; Accueil : Lundi-Dimanche 9h à 19h</span></li>
+                <li><a href="#"><img src="./ressources/footer/telephone-footer-icon.svg" alt="icône téléphone" class="icon"><span class="text">&emsp; +33 9 12 68 58 78</span></a></li>
+                <li><a href="#"><img src="./ressources/footer/mail-info-footer-icon.svg" alt="icône enveloppe" class="icon"><span class="text">&emsp; npruvost@tccf.com</span></a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+
+                    <!-- Bloc 2 -->    
+          <div class="col-md-4 mt-4">
+            <h5 class="h4 footer-heading d-flex cairo-font text-white mb-2">
+              <span class="d-flex align-items-center justify-content-center"></span>
+              Informations du site
+            </h5>
+
+            <div class="block-footer block-footer-2 mt-1">
+              <ul class="list-unstyled">
+                <li><a href="#home" class="py-1 d-block">Accueil</a></li>
+                <li><a href="/index.html#aPropos" class="py-1 d-block">Concept</a></li>
+                <li><a href="/index.html#cours" class="py-1 d-block">Cours</a></li>
+                <li><a href="/tarifs.html" class="py-1 d-block">Tarifs</a></li>
+                <li><a href="/evenements.html" class="py-1 d-block">Evénements</a></li>
+                <li><a href="/index.html#partenaires" class="py-1 d-block">Partenaires</a></li>
+                <li><a href="/contact.html" class="py-1 d-block">Contact</a></li>
+                <li><a href="/mentions-legales.html" class="py-1 d-block">Mentions légales & Confidentialité</a></li>
+       
+              </ul>
+            </div>
+
+          </div>
+
+
+
+                    <!-- Bloc 3 -->  
+          <div class="col-md-4 mt-4 d-flex flex-column">
+            <h5 class="h4 footer-heading cairo-font text-white mb-0">
+              <span class="text-white">Suivez-nous</span>
+            </h5>
+            <p class="cairo-font text-blanc-ivoire">Si vous aimez le tennis et les barbecues 😎</p>
+            
+
+            <div class="block-footer block-footer-3">
+              <ul class="list-unstyled">
+                <li><a href="#"><span><img src="./ressources/footer/facebook-footer-icon.svg" alt="icône facebook" class="icon"></span></a></li>
+                <li><a href="#"><span><img src="./ressources/footer/insta-footer-icon.svg" alt="icône instagram" class="icon"></span></a></li>
+                <li><a href="#"><span><img src="./ressources/footer/whatsapp-footer-icon.svg" alt="icône whatsapp" class="icon"></span></a></li>
+              </ul>
+
+
+              <h5 class="h4 footer-heading text-white mt-4">Recevez notre actu : le meilleur en 1 clic</h5>
+              <form action="#" class="subscribe-form">
+                <div class="input-group mb-3 d-flex">
+                  <input type="text" class="form-control rounded-left" placeholder="Entrez votre email" aria-label="Entrez votre email" aria-describedby="button-addon">
+                  <button type="button" id="button-addon" class="btn bg-terracotta-light px-3 rounded-right"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+              </form>
+
+            </div>
+
+
+          </div>
+
+
+				</div>
+			</div>
+
+
+            
+          <!-- Copyright - fin du footer -->
+
+      <div class="row p-4 d-flex text-center justify-content-center">
+        <div class="col-md-6 col-lg-8 border-top">
+
+          <div class="legacy mt-3 text-light">
+            <h6 class="mb-0">Copyright &copy;
+              <script>document.write(new Date().getFullYear())</script> 
+              Designed by Kamilia Gourbail - Tous droits réservés
+            </h6>
+          </div>
+
+        </div>
+      </div>
+      
+      
+      
+    </footer>
+
+
+
+
+
+    <!-- Cookies consent--> 
+
+    <div class="container-fluid cookie-container">
+      <div class="d-flex flex-column text-center">
+
+        <div class="col-12">
+
+      <p class="mt-2 mb-2">
+        Nous utilisons des cookies pour améliorer votre expérience utilisateur. En naviguant sur notre site, vous acceptez
+        <a href="/mentions-legales.html">ces cookies</a> sur votre dispositif.
+      </p>
+
+      <button class="cookie-btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Ce site est fictif">
+        OK
+      </button>
+
+      </div>
+
+      </div>
+    </div>
+    
+
+    
+    <!-- Scripts bundle bootstrap + fichier app.js --> 
+    <script src="./scripts/bootstrap.bundle.js"></script> 
+    <script src="app.js"></script>
+
+  
+    
+  
+
+  </body>
+
+</html>

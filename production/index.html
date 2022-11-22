@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- SEO et accessibilité -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Tennis Club Cap-Ferret">
+    <meta name="description" content="Cours et compétitions de tennis pour enfants, ados, adultes, valides et handicapés. Terrains en dur et terre battue. Restauration et piscine extérieure à disposition.">
+          <!-- On optimise le téléchargement de la home page, inclus la ligne de code qui suit -->
+    <link rel="preload" href="styles/cleaned/home.css" as="style">
+    <link rel="stylesheet" href="styles/cleaned/home.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Hind:wght@300&display=swap" rel="stylesheet" />
+    <!-- Favicon - realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ressources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ressources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ressources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="ressources/favicon/site.webmanifest">
+    <link rel="mask-icon" href="ressources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles/cleaned/home.css" />
+  </head>
+  
+  <body>
+
+
+
+    <!-- Preloader -->
+    <div class="loader">
+      <div class="anim">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Navbar -->
+    
+    <nav id="navbar-scrollspy" class="navbar navbar-expand-lg bg-rose-light navbar-light fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="./ressources/logo-tennis-club.jpg" alt="Logo Tennis club Cap-Ferret" class="d-inline-block align-text"><span>&emsp; Le tennis autrement</span>
+        </a>
+
+        <!-- Ce qui est visible en petit écran écran -->
+        <button class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Ce qui est visible en grand écran  -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto text-center" id="navbarNav">
+            <li class="nav-item me-1">
+              <a href="#home" class="nav-link active">Accueil</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="#aPropos" class="nav-link">Concept</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="#cours" class="nav-link">Cours</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="/tarifs.html" class="nav-link">Tarifs</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="/evenements.html" class="nav-link">Evénements</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="#partenaires" class="nav-link">Partenaires</a>
+            </li>
+            <li class="nav-item me-1">
+              <a href="/contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+        <!-- Ouverture de la div Scrollspy de nav-items dans la navbar -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0"> 
+    
+
+
+
+
+    <!-- Header, média et contenu texte -->
+
+    <header id="home">
+         
+      <div class="overlay"></div>
+
+      <!-- Image sur petit écran qui va créer le background jusqu'à md-->
+      <img class="image-petit-ecran" src="./ressources/home/home-raquette-mobile.jpg" alt="Raquette de tennis">
+
+      <!-- Image kenburns-top sur grand écran qui va créer le background dès md-->
+          <img class="image-grand-ecran" src="./ressources/home/home-terrain-grandecran.jpg" alt="Végétation dense autour d'un Terrain de tennis en dur">
+
+      <!-- Le contenu texte -->
+      <div class="content-height">
+          <div class="container mt-3 mb-3 p-lg-5 text-light text-sm-center text-md-start">
+              <h1 class="cairo-font display-4">Tennis Club Cap-Ferret</h1>
+              <h2 class="cairo-font fw-bolder">Une nouvelle manière de vivre l'expérience tennistique</h2>
+              <div class="col-sm-12 d-none d-sm-block col-md-10 col-lg-6">
+              <p class="fs-5">Un club de tennis professionnel et convivial, niché dans un lieu unique et verdoyant au coeur de la ville.</p>
+              </div>
+              <a href="./tarifs.html#organisationClub" class="btn btn-terracotta-light mt-2">Découvrez la vie du club</a>
+
+          </div>
+
+      </div>
+
+    </header>
+
+  
+
+
+      <!-- Section A propos -->
+
+
+    <section id="aPropos" class="bg-blanc-ivoire p-1 p-md-3 p-lg-5">
+
+      <div class="container-fluid">
+          <div class="row p-lg-5 row-cols-1 row-cols-lg-2 ">
+
+              <div class="sliding-left-content responsive-order-2 h-auto p-4 p-md-5 d-flex flex-column">
+                  <h3 class="cairo-font text-vert-eau fw-bolder display-6 lh-1">Qui sommes-nous</h3>
+                  <h2 class="cairo-font text-vert-eau fw-lighter fs-4 lh-1">Un club qui allie l'esprit sportif et le bien-être</h2>
+                  <div class="pt-3">
+                  <p class="fw-lighter lh-lg ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto, ad optio quaerat nemo culpa minima a ex, nam voluptas repellendus eligendi dolor magni laborum perferendis, dignissimos harum possimus rem delectus provident est dolores beatae. Praesentium, autem. Provident repellat iure a sed, necessitatibus assumenda placeat facilis at repudiandae minus, nihil accusamus debitis perferendis suscipit maiores soluta illo possimus quia quasi. Impedit ab eum asperiores iste voluptas! Eaque dolores corrupti dolore tempore consequuntur ad soluta quidem doloremque id et, voluptatem similique illo unde quod quia velit eius ullam sunt omnis obcaecati labore inventore? Non, ipsum impedit. Reprehenderit earum, sed voluptatibus dolores et quisquam provident id. Ipsam sit corrupti minus dolorum, iure ut odio expedita, corporis magnam, illo quos eaque voluptatum. Officiis consequuntur non voluptas facere molestias, impedit odio eius laborum similique natus mollitia quo deleniti aliquam corrupti optio soluta error necessitatibus corporis nesciunt esse dolores voluptatum veritatis. Molestias delectus ab minus!.</p>     
+                  </div>       
+              </div>
+   
+              <div class="image-a-propos responsive-order-1 h-auto g-0">
+                  <img src="ressources/home/image-a-propos.jpg" alt="Une joueuse au service" class="w-100 h-100 object-cover">
+              </div>
+   
+
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Section caractéristiques, 3 x dual content avec icônes -->
+
+
+    <div class="bg-mandarine">
+      <div class="container pt-1">
+          <p class="cairo-font text-vert-eau fs-4  mt-4 mt-md-5 mb-0 text-center">A votre service</p>
+          <h3 class="cairo-font text-vert-eau display-6 fw-bolder mb-md-5 mb-3 text-center">Nos compétences, vos bénéfices</h3>
+
+          <div class="sliding-right">
+
+              <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center pt-3 pb-5 mt-0 mt-md-5">
+
+
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="row justify-content-center">
+                          <img src="ressources/home/icone-coach-tennis.png" alt="panier pic-nique" class="icone-caracteristiques col-4">
+                      </div>
+                      <h2 class="cairo-font fw-normal text-center fs-4 p-2">Une équipe professionnelle<br>dédiée à votre service</h2>
+                      <p class="fw-lighter text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis error iste vel itaque ab provident fugiat facere rerum nihil tempore? At dolorum laboriosam dolor reiciendis.</p>
+                  </div>
+  
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="row justify-content-center">
+                          <img src="ressources/home/icone-terrains-tennis.png" alt="chat icon" class="icone-caracteristiques col-4">
+                      </div>
+                      <h2 class="cairo-font fw-normal text-center fs-4 p-2">De nouveaux terrains<br>pour votre confort</h2>
+                      <p class="fw-lighter text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga et laboriosam atque, veniam praesentium aperiam quas placeat voluptatum, ratione consectetur tempora accusantium, non cupiditate.</p>
+                  </div>
+
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="row justify-content-center">
+                      <img src="ressources/home/icone-restauration.png" alt="chat icon" class="icone-caracteristiques col-4">
+                      </div>
+                      <h2 class="cairo-font fw-normal text-center fs-4 p-2">Une atmosphère conviviale <br>pour se restaurer</h2>
+                      <p class="fw-lighter text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe pariatur in eveniet voluptatum laudantium sunt tempora, excepturi, aliquid ut qui numquam, porro perspiciatis libero?</p>
+                  </div>
+
+
+              </div>
+
+          </div>  
+
+      </div>
+  </div>
+
+
+
+
+
+
+    <!-- Section cours -->
+
+    <section id="cours" class="bg-vert-eau p-sm-3 p-md-5 p-1">
+      <div class="container pt-4 pb-5">
+
+        <h3 class="text-center mt-sm-2 mt-4 text-light cairo-font fw-bolder display-6">Nos types de cours</h3>
+        <p class="text-center mb-sm-2 mb-0 text-light cairo-font fs-4 fw-lighter">Compétitions & détente dans un cadre enchanteur</p>
+
+        <div class="row pb-4">
+
+
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="carte">
+
+              <div class="row g-0 flex-column bg-blanc-ivoire flex-md-row mt-5 rounded-start">
+
+                <div class="col-12 col-md-3">
+                  <img src="ressources/home/jeu-section-cours.jpg" alt="Coach qui donne un cours de tennis à une jeune fille" class="w-100 h-300 object-cover object-pos-top mx-auto">
+                </div>
+                <div class="col-12 col-md-9">
+                  <div class="p-4 h-100 text-dark-1 d-flex flex-column rounded-end">
+                    <div>
+                      <h3 class="cairo-font fw-normal fs-4">Le tennis pour tous !</h3>
+                      <p class="cairo-font fw-bolder fs-5 text-terracotta-light">" Jeu "</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa, in architecto itaque molestias dignissimos ducimus eum tempora! Laboriosam deleniti velit accusantium alias, vel ut facere minima possimus laudantium enim officia impedit sed quibusdam tempore porro. Exercitationem quo, quisquam alias quasi molestias quaerat et accusantium esse possimus earum accusamus rem laborum inventore repellat officia repudiandae.</p>
+                    </div>
+                    <div class="mt-auto">
+                      <a href="./tarifs.html" class="btn btn-terracotta-light">Les tarifs</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="carte">
+
+              <div class="row g-0 flex-column bg-blanc-ivoire flex-md-row mt-5 rounded-start">
+
+                <div class="col-12 col-md-3">
+                  <img src="ressources/home/set-section-cours.jpg" alt="Filet de tennis" class="w-100 h-300 object-cover object-pos-top mx-auto">
+                </div>
+                <div class="col-12 col-md-9">
+                  <div class="p-4 h-100 text-dark-1 d-flex flex-column rounded-end">
+                    <div>
+                      <h3 class="cairo-font fw-normal fs-4">Des cours sur mesure pour tous niveaux. Amateurs et pros.</h3>
+                      <p class="cairo-font fw-bolder fs-5 text-terracotta-light">" Set "</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa, in architecto itaque molestias dignissimos ducimus eum tempora! Laboriosam deleniti velit accusantium alias, vel ut facere minima possimus laudantium enim officia impedit sed quibusdam tempore porro. Exercitationem quo, quisquam alias quasi molestias quaerat et accusantium esse possimus earum accusamus rem laborum inventore repellat officia repudiandae.</p>
+                    </div>
+                    <div class="mt-auto">
+                      <a href="./tarifs.html" class="btn btn-terracotta-light">Les tarifs</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+  
+
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="carte">
+
+              <div class="row g-0 flex-column bg-blanc-ivoire flex-md-row mt-5 rounded-start">
+
+                <div class="col-12 col-md-3">
+                  <img src="ressources/home/match-section-cours.jpg" alt="Homme au service dans une competition de tennis" class="w-100 h-300 object-cover object-pos-top mx-auto">
+                </div>
+                <div class="col-12 col-md-9 rounded-end">
+                  <div class="p-4 h-100 text-dark-1 d-flex flex-column">
+                    <div>
+                      <h3 class="cairo-font fw-normal fs-4">Des tournois interclubs, nationales et internationales.</h3>
+                      <p class="cairo-font fw-bolder fs-5 text-terracotta-light">" Match "</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa, in architecto itaque molestias dignissimos ducimus eum tempora! Laboriosam deleniti velit accusantium alias, vel ut facere minima possimus laudantium enim officia impedit sed quibusdam tempore porro. Exercitationem quo, quisquam alias quasi molestias quaerat et accusantium esse possimus earum accusamus rem laborum inventore repellat officia repudiandae!</p>
+                    </div>
+                    <div class="mt-auto">
+                      <a href="./evenements.html" class="btn btn-terracotta-light">Les événements</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="carte">
+
+              <div class="row g-0 flex-column bg-blanc-ivoire flex-md-row rounded-start mt-5">
+
+                <div class="col-12 col-md-3">
+                  <img src="ressources/home/apres-match-section-cours.jpg" alt="Cornet à glace avec des balles de tennis qui remplacent les boules de glace" class="w-100 h-300 object-cover object-pos-top mx-auto">
+                </div>
+                <div class="col-12 col-md-9">
+                  <div class="p-4 h-100 text-dark-1 d-flex flex-column rounded-end">
+                    <div>
+                      <h3 class="cairo-font fw-normal fs-4">Restauration et barbecues côté <i>pool-side</i></h3>
+                      <p class="cairo-font fw-bolder fs-5 text-terracotta-light">" L'après-match "</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa, in architecto itaque molestias dignissimos ducimus eum tempora! Laboriosam deleniti velit accusantium alias, vel ut facere minima possimus laudantium enim officia impedit sed quibusdam tempore porro. Exercitationem quo, quisquam alias quasi molestias quaerat et accusantium esse possimus earum accusamus rem laborum inventore repellat officia repudiandae?</p>
+                    </div>
+                    <div class="mt-auto">
+                      <a href="./tarifs.html#organisationClub" class="btn btn-terracotta-light">La vie du club</a>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Section Références clients -->
+
+    <div class="bg-blanc-ivoire" id="références">
+      <p class="sliding-left text-center text-vert-eau cairo-font fw-bolder display-6 pt-5">Ils nous font confiance</p>
+      <h4 class="text-center cairo-font text-vert-eau fw-lighter fs-4">Nos partenaires majeurs</h4>
+
+      <div class="container pb-5">
+          <div class="row">
+  
+              <div class="text-center col-xs-12 col-md-6 col-lg-3">
+                  <a href="#références">
+                      <img src="ressources/home/logo-fft.png" alt="FFT">
+                  </a>
+
+              </div>
+              <div class="text-center col-xs-12 col-md-6 col-lg-3">
+                  <a href="#références">
+                      <img src="ressources/home/logo-land-rover.png" alt="Land rover">
+                  </a>
+
+              </div>
+              <div class="text-center col-xs-12 col-md-6 col-lg-3">
+                  <a href="#références">
+                      <img src="ressources/home/logo-briston-watches.png" alt="Montres Briston">
+                  </a>
+              </div>
+
+              <div class="text-center col-xs-12 col-md-6 col-lg-3 p-1">
+                  <a href="#références">
+                      <img src="ressources/home/logo-bissardon.png" alt="Jus de fruits Brissardon">
+                  </a>
+              </div>
+              
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Section Partenaires -->
+
+    <section id="partenaires" class="py-2">
+
+      <div class="overlay-partenaires"></div>
+
+      <div class="content-text">
+        <div class="container pt-5 pb-5">
+          <h4 class="text-center mb-0 mb-sm-2 text-light cairo-font fs-4 fw-lighter">Devenir partenaire</h4>
+          <p class="text-center mt-4 mt-sm-2 text-light cairo-font fw-bolder display-6">Gagnez en visibilité, et partagez notre aventure</p>
+         
+            <!-- disparait à md -->
+            <p class="text-light p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptatum dicta sed quisquam dolor quos vero eos voluptatibus ipsam. Doloremque, cupiditate aliquid perspiciatis architecto, qui laboriosam voluptatum provident veniam soluta nisi magni fugiat iusto ratione itaque natus reiciendis tempore iste, aliquam earum rem ducimus.</p>
+            <p class="text-light p-2 d-none d-md-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptatum dicta sed quisquam dolor quos vero eos voluptatibus ipsam. Doloremque, cupiditate aliquid perspiciatis architecto, qui laboriosam voluptatum provident veniam soluta nisi magni fugiat iusto ratione itaque natus reiciendis tempore iste, aliquam earum rem ducimus non nam officia! Cumque qui consequatur debitis obcaecati. Obcaecati similique, blanditiis optio consequatur autem reiciendis? Fuga assumenda sequi quibusdam ipsam impedit. Possimus laudantium, sed saepe itaque ducimus eius tempora sint quis vero dolorem earum quasi quod, veritatis maiores. Possimus officia saepe, animi consequuntur debitis corrupti unde recusandae corporis. Doloremque itaque sequi atque accusamus, quo dignissimos voluptate hic mollitia maiore.</p>
+            <img src="ressources/home/circle-arrow-down.svg" alt="Flèche vers le bas">
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+     <!-- Section Contact -->
+
+    <section id="contact" class="bg-mandarine py-5">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 class="h3 cairo-font text-vert-eau fw-bold">Contactez-nous</h4>
+            <p class="lead cairo-font fw-lighter"><span class="fw-normal">Montez-au filet </span>: venez passer un moment sportif et convivial avec nous !<br><span class="fw-normal">Partenaires </span>: vous êtes aussi au bon endroit ⬇.<p>
+
+            <form>
+              <div class="input-group mb-3">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-user"></i>
+                </span>
+
+                <input type="text" class="form-control" placeholder="Entrez votre prénom et nom">    
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-at"></i>
+                </span>
+                  
+                <input type="text" class="form-control" placeholder="Entrez votre email">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-pencil"></i>
+                </span>
+                  
+                <textarea class="form-control" placeholder="Et ici votre message :)" rows="5"></textarea>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <input type="submit" value="Envoyer" class="btn btn-terracotta-light btn-md col-6">
+              </div>
+      
+                      
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+        <!-- Fermeture de la div Scrollspy de nav-items dans la navbar -->
+    </div>
+  
+
+
+
+
+
+
+    <!-- Section Footer -->
+
+    <footer id="footer-background">
+
+      <div class="overlay-footer"></div>
+
+
+          <!-- Logo du club et baseline -->
+      <div class="container ">
+       <div class="row justify-content-center">
+         <div class="col-md-6 d-flex flex-column align-items-center mt-5">
+           <img src="./ressources/logo-tennis-club.jpg" alt="logo Tennis Club Cap-Ferret" class="logo-footer">
+           <h5 class="cairo-font fw-lighter text-white mt-2 ">Le tennis autrement</h5>
+          </div>
+
+        </div>
+      </div>
+
+
+          <!-- Contenu du footer avec 3 rubriques titres et ses 3 blocs -->      
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 mt-4">
+            <h5 class="h4 footer-heading d-flex cairo-font text-white mb-0">
+							<span class="d-flex align-items-center justify-content-center"></span>
+							Où nous trouver
+            </h5>
+            
+            
+                      <!-- Bloc 1 -->  
+            <div class="block-footer block-footer-1 mt-1">
+              <ul class="list-unstyled">
+                <li><a href="#"><img src="./ressources/footer/localisation-footer-icon.svg" alt="icône de localisation" class="icon"><span class="text">&emsp; 5 chemin Emile Pruvost, 3970 Cap-Ferret, France</span></a></li>
+                <li><img src="./ressources/footer/horaires-footer-icon.svg" alt="icône maison" class="icon"><span class="text text-blanc-ivoire">&emsp; Accueil : Lundi-Dimanche 9h à 19h</span></li>
+                <li><a href="#"><img src="./ressources/footer/telephone-footer-icon.svg" alt="icône téléphone" class="icon"><span class="text">&emsp; +33 9 12 68 58 78</span></a></li>
+                <li><a href="#"><img src="./ressources/footer/mail-info-footer-icon.svg" alt="icône enveloppe" class="icon"><span class="text">&emsp; npruvost@tccf.com</span></a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+
+                    <!-- Bloc 2 -->    
+          <div class="col-md-4 mt-4">
+            <h5 class="h4 footer-heading d-flex cairo-font text-white mb-2">
+              <span class="d-flex align-items-center justify-content-center"></span>
+              Informations du site
+            </h5>
+
+            <div class="block-footer block-footer-2 mt-1">
+              <ul class="list-unstyled">
+                <li><a href="#home" class="py-1 d-block">Accueil</a></li>
+                <li><a href="/index.html#aPropos" class="py-1 d-block">Concept</a></li>
+                <li><a href="/index.html#cours" class="py-1 d-block">Cours</a></li>
+                <li><a href="/tarifs.html" class="py-1 d-block">Tarifs</a></li>
+                <li><a href="/evenements.html" class="py-1 d-block">Evénements</a></li>
+                <li><a href="/index.html#partenaires" class="py-1 d-block">Partenaires</a></li>
+                <li><a href="/contact.html" class="py-1 d-block">Contact</a></li>
+                <li><a href="/mentions-legales.html" class="py-1 d-block">Mentions légales & Confidentialité</a></li>
+       
+              </ul>
+            </div>
+
+          </div>
+
+
+
+                    <!-- Bloc 3 -->  
+          <div class="col-md-4 mt-4 d-flex flex-column">
+            <h5 class="h4 footer-heading cairo-font text-white mb-0">
+              <span class="text-white">Suivez-nous</span>
+            </h5>
+            <p class="cairo-font text-blanc-ivoire">Si vous aimez le tennis et les barbecues 😎</p>
+            
+
+            <div class="block-footer block-footer-3">
+              <ul class="list-unstyled">
+                <li><a href="#"><span><img src="./ressources/footer/facebook-footer-icon.svg" alt="icône facebook" class="icon"></span></a></li>
+                <li><a href="#"><span><img src="./ressources/footer/insta-footer-icon.svg" alt="icône instagram" class="icon"></span></a></li>
+                <li><a href="#"><span><img src="./ressources/footer/whatsapp-footer-icon.svg" alt="icône whatsapp" class="icon"></span></a></li>
+              </ul>
+
+
+              <h5 class="h4 footer-heading text-white mt-4">Recevez notre actu : le meilleur en 1 clic</h5>
+              <form action="#" class="subscribe-form">
+                <div class="input-group mb-3 d-flex">
+                  <input type="text" class="form-control rounded-left" placeholder="Entrez votre email" aria-label="Entrez votre email" aria-describedby="button-addon">
+                  <button type="button" id="button-addon" class="btn bg-terracotta-light px-3 rounded-right"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+              </form>
+
+            </div>
+
+
+          </div>
+
+
+				</div>
+			</div>
+
+
+            
+          <!-- Copyright - fin du footer -->
+
+      <div class="row p-4 d-flex text-center justify-content-center">
+        <div class="col-md-6 col-lg-8 border-top">
+
+          <div class="legacy mt-3 text-light">
+            <h6 class="mb-0">Copyright &copy;
+              <script>document.write(new Date().getFullYear())</script> 
+              Designed by Kamilia Gourbail - Tous droits réservés
+            </h6>
+          </div>
+
+        </div>
+      </div>
+      
+      
+      
+    </footer>
+
+
+
+
+
+    <!-- Cookies consent--> 
+
+    <div class="container-fluid cookie-container">
+      <div class="d-flex flex-column text-center">
+
+        <div class="col-12">
+
+      <p class="mt-2 mb-2">
+        Nous utilisons des cookies pour améliorer votre expérience utilisateur. En naviguant sur notre site, vous acceptez
+        <a href="/mentions-legales.html">ces cookies</a> sur votre dispositif.
+      </p>
+
+      <button type="button" class="cookie-btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Ce site est fictif">
+        OK
+      </button>
+
+      </div>
+
+      </div>
+    </div>
+    
+
+
+    
+    <!-- Scripts bundle bootstrap + fichier app.js --> 
+    <script src="./scripts/bootstrap.bundle.js"></script> 
+    <script src="app.js"></script>
+
+  
+    
+  
+
+  </body>
+
+</html>
