@@ -131,7 +131,7 @@ These command lines generate 5 style.css files in the "cleaned" folder.
 <link rel="stylesheet" href="styles/cleaned/mentions-legales.css">
 ```
 
-<span style="color:red">*Warning with those js properties link to classes (e.g. hidden) which are not specified in the html files:*</span>
+<span style="color:red">*Warning with js properties link to classes (e.g. hidden) which are not specified in the html files:*</span>
 
 For instance in my project, i have added the comment lines below to make the css purge correctly.
 
