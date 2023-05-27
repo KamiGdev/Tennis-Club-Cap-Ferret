@@ -13,27 +13,30 @@ Medias : royalty-free sources from Shutterstock, Pexels and Unsplash.
 Graphic design with image creations.
 
 ## Editorial content
-Work on titles and subtitles and some paragraphs. The rest of the content is in lorem, bearing in mind that the site is fictitious and the evaluation is technical. The site is not referenced by bots, so there's no risk of duplicate content.
+Work on titles, subtitles and some paragraphs. The rest of the content is in lorem, bearing in mind that the site is fictitious and the evaluation is technical. The site is not referenced by bots, so there's no risk of duplicate content.
 
 # Code
 ## Syntax, language and framework
-HTML 5, CSS 3, JS and BOOTSTRAP V5.0 installed locally with SASS for site customization. 
+HTML 5, CSS 3, JS and BOOTSTRAP V5.0 installed locally with SASS for site customization.  
 No existing backend in this project.
 
 ## Installations and development
 ### Bootstrap in cli
-Before running :
+Before running :  
 Make sure you have installed node.js to have all dependencies.
 
-Command:```bash 
+Command:
+```bash 
 npm init (tap "enter" until you get the package.json file)
 npm install bootstrap (you have now 2 files, node_modules and package-lock.json)
 ```
 
 Notes :  You can also install bootstrap in cdn by copying links of css and js components.
-https://getbootstrap.com/docs/5.0/getting-started/download/
+https://getbootstrap.com/docs/5.0/getting-started/download/  
 
-### SASS installation
+
+### SASS installation  
+
 **Step 1: Enter command**
 ```bash
 npm install -g sass (g for global to install sass on your computer, not only for the project)
@@ -67,7 +70,7 @@ sass sass/global.scss styles/raw/style.css --watch ("watch" enables to register 
 This action will generate 2 files style.css and style.css.map. Create a folder "styles" and subfolder "raw" and add these css files in the "raw" subfolder.
 
 
-<span class="text-success">**Tips to avoid retyping the automatic sass command with watch**</span>
+<span style="color:green">*Tips to avoid retyping the automatic sass command with watch:*</span>  
 In the package.json file under "scripts", type:
 ```
 "sass": "sass scss/global.scss styles/raw/style.css --watch "
@@ -80,6 +83,7 @@ Then, in the terminal of the json file, type the command:
 
 In the html file, we link the compilation file :
 ```<link rel="stylesheet" href="styles/raw/style.css">```  
+
 
 
 **Step 4: Preparing css purge**  
@@ -127,7 +131,7 @@ These command lines generate 5 style.css files in the "cleaned" folder.
 <link rel="stylesheet" href="styles/cleaned/mentions-legales.css">
 ```
 
-<span class="text-danger">**Warning with those js properties link to classes (e.g. hidden) which are not specified in the html files**</span>
+<span style="color:red">*Warning with those js properties link to classes (e.g. hidden) which are not specified in the html files:*</span>
 
 For instance in my project, i have added the comment lines below to make the css purge correctly.
 
@@ -153,7 +157,7 @@ Create a new "Production" folder in your project wich contains :
  * The 5 html pages in the production folder root
  * A ressources folder (images, logo, icons and so on)
  * A script folder (bootstrap js folder)
- * The css styles folder (include the 5 cleaned css pages)
+ * The css styles folder (including the 5 cleaned css pages)
 
  ## Commits
 I've made regular commits by working by page and by feature:
