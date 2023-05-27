@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass sass/global.scss styles/raw/style.css --watch",
-    "purgecss":  "purgecss --css styles/raw/style.css --content index.html scripts/*.js -o styles/cleaned/home.css"
+    "purgecss": "purgecss --css styles/raw/style.css --content index.html scripts/*.js -o styles/cleaned/home.css"
   },
   "author": "kami-gourbail",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "normalize.css": "^8.0.1"
   }
 }

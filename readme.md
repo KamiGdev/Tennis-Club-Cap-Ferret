@@ -1,36 +1,31 @@
 # Tennis club Cap-Ferret
-A fictitious tennis club website created in French for my studies. The very first one! (by coding).
+A french fictitious tennis club website created for my studies. The very first one! (by coding).
 This is a responsive application, in portrait and landscape mode, coded in mobile first with ui/ux experience respected.
 The website contains 5 pages. All rights reserved, just ask for use.
 
-# No code
+# Design and content
 ## Graphic chart, fonts & medias
-A cheerful color modern palette with pale and yet acidic tones. The color scheme remains tennis-like, with both the ochre of clay and the hard court (green or blue).
-Inspiration source: coolors.co
+A cheerful color modern palette with pale and yet acidic tones. The color scheme remains tennis-like, with both the ochre of clay and the hard court (green or blue).  
+Inspiration source: coolors.co  
 Fonts: inspiration from fontjoy.com
 
-Medias : royalty-free sources from Shutterstock, Pexels and Unsplash.
-Graphic design with image creation.
-
-Note : the logo is fictitious.
-
+Medias : royalty-free sources from Shutterstock, Pexels and Unsplash.  
+Graphic design with image creations.
 
 ## Editorial content
-Travail sur les titres et sous-titres en balises <h>, et certains paragraphes en balises <p> & <span>. The rest of the content is in lorem, bearing in mind that the site is fictitious and that the evaluation is on the technical side. The site is not referenced by bots, so there's no risk of duplicate content.
-
+Work on titles and subtitles and some paragraphs. The rest of the content is in lorem, bearing in mind that the site is fictitious and the evaluation is technical. The site is not referenced by bots, so there's no risk of duplicate content.
 
 # Code
 ## Syntax, language and framework
 HTML 5, CSS 3, JS and BOOTSTRAP V5.0 installed locally with SASS for site customization. 
-No backend in this project.
+No existing backend in this project.
 
-## Installations
+## Installations and development
 ### Bootstrap in cli
 Before running :
 Make sure you have installed node.js to have all dependencies.
 
-Command:
-```bash 
+Command:```bash 
 npm init (tap "enter" until you get the package.json file)
 npm install bootstrap (you have now 2 files, node_modules and package-lock.json)
 ```
@@ -42,8 +37,10 @@ https://getbootstrap.com/docs/5.0/getting-started/download/
 **Step 1: Enter command**
 ```bash
 npm install -g sass (g for global to install sass on your computer, not only for the project)
-```
-**Step 2: Folder and file creations**
+```  
+
+
+**Step 2: Folder and file creations**  
 Create a global.scss file within a sass folder. Then import bootstrap scripts and personal components. In my case study, I have targeted the color palette, custom, utilities and components:
 
 ```
@@ -58,9 +55,10 @@ Create a global.scss file within a sass folder. Then import bootstrap scripts an
 @import "./components";
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
-```
+```  
 
-**Step 3: SASS compilation and CSS link to HTML**
+
+**Step 3: SASS compilation and CSS link to HTML**  
 In your terminal, type the command :
 ```bash
 sass sass/global.scss styles/raw/style.css --watch ("watch" enables to register the changes and automatic compilation of scss/sass to css)
@@ -69,7 +67,7 @@ sass sass/global.scss styles/raw/style.css --watch ("watch" enables to register 
 This action will generate 2 files style.css and style.css.map. Create a folder "styles" and subfolder "raw" and add these css files in the "raw" subfolder.
 
 
-<span class="text-success">Tips to avoid retyping the automatic sass command with watch</span>
+<span class="text-success">**Tips to avoid retyping the automatic sass command with watch**</span>
 In the package.json file under "scripts", type:
 ```
 "sass": "sass scss/global.scss styles/raw/style.css --watch "
@@ -81,11 +79,11 @@ Then, in the terminal of the json file, type the command:
  ```
 
 In the html file, we link the compilation file :
-```<link rel="stylesheet" href="styles/raw/style.css">```
+```<link rel="stylesheet" href="styles/raw/style.css">```  
 
 
-**Step 4: Preparing css purge**
-Create a "cleaned" subfolder in the styles folder to purge css in the final phase of the project.
+**Step 4: Preparing css purge**  
+Create a "cleaned" subfolder in the styles folder to purge css in the final phase of the project.  
 
 
 ## CSS Purge
@@ -95,7 +93,7 @@ Go on the raw/style.css file. On you terminal type the command :
  npm i -g purgecss
  ```
 
-then, in the package.json file, under "scripts" and under "sass", enter the command:
+Then, in the package.json file, under "scripts" and under "sass", enter the command:
 ```bash
 "purgecss":  "purgecss -css styles/raw/style.css --content index.html -o s--content index.html scripts/*.js -o styles/cleaned/home.css"
  ```
@@ -112,7 +110,7 @@ purgecss -css styles/raw/style.css --content contact.html -o s--content contact.
 purgecss -css styles/raw/style.css —content mentions-legales.html -o s--content mentions-legales.html scripts/*.js -o styles/cleaned/mentions-legales.css
 ```
 
-These command lines generate 5 style.css files in the "cleaned" folder.
+These command lines generate 5 style.css files in the "cleaned" folder.  
 
 
 
@@ -129,7 +127,7 @@ These command lines generate 5 style.css files in the "cleaned" folder.
 <link rel="stylesheet" href="styles/cleaned/mentions-legales.css">
 ```
 
-<span class="text-danger">Warning with those js properties link to classes (e.g. hidden) which are not specified in the html files:</span>
+<span class="text-danger">**Warning with those js properties link to classes (e.g. hidden) which are not specified in the html files**</span>
 
 For instance in my project, i have added the comment lines below to make the css purge correctly.
 
@@ -160,8 +158,8 @@ Create a new "Production" folder in your project wich contains :
  ## Commits
 I've made regular commits by working by page and by feature:
 - 1 branch per page, then i've merged it with the "main" branch when work deemed complete
-- The "main" branch was created with the document body (basic tags)
-- At the end of the project, commits has been added to the "main" branch as:
+- The "main" branch was initialized with the document body (basic tags)
+- At the end of the project, following commits has been added to the "main" branch as:
 * SEO (meta tags)
 * Cookies
 * Preload
@@ -169,14 +167,14 @@ I've made regular commits by working by page and by feature:
 * Code and editorial content optimizations
 * CSS purge
 * Production folder creation
-* Readme file added
+* Readme (added file)
 
 # Production deployment
-With netlify.com
-[Site en ligne ici](https://tennis-club-cap-ferret.netlify.app)
+With netlify.com  
+[On-line application](https://tennis-club-cap-ferret.netlify.app)
  
 
-<span class="text-warning">*SEO notes*</span>
+<span class="text-warning">**SEO notes**</span>  
 As the site is fictitious, no sitemap file exists, just a robots.txt file specifying that all search engine robots are prohibited from crawling the site and referencing pages.
 
 robots.txt file :

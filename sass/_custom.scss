@@ -219,6 +219,8 @@ header .image-grand-ecran {
 
 header .content-height {
   padding-top: 20vh;
+  position: relative;
+  z-index: 2;
 }
 
 
