@@ -175,8 +175,6 @@ I've made regular commits by working by page and by feature:
 
 # Production deployment
 With netlify.com  
-[On-line application](https://tennis-club-cap-ferret.netlify.app)
- 
 
 <span class="text-warning">**SEO notes**</span>  
 As the site is fictitious, no sitemap file exists, just a robots.txt file specifying that all search engine robots are prohibited from crawling the site and referencing pages.
